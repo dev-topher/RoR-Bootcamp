@@ -1,0 +1,33 @@
+/* CSS */
+
+/* CSS Nav */
+
+.logo{
+    height: 45px;
+}
+
+.navbar {
+    background-color: #28A745;
+}
+
+/* CSS Cards */
+
+.precio-oferta{
+    color:#28A745;
+}
+
+.contenedor-form {
+    color: #fff;
+    background-color: #28A745;
+}
+
+.contenedor-form form {
+    color : #000;
+}
+
+.btn-primary {
+    border:0;
+    background-color: #fff;
+    color: #000;
+}
+

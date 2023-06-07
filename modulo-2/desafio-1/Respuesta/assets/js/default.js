@@ -1,0 +1,1 @@
+/* JS default para todas las páginas */

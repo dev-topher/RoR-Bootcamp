@@ -1,0 +1,80 @@
+/* CSS FONT y Main */ 
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+/* CSS NAVBAR */ 
+nav{
+    background-color: #E83E8C !important;
+}
+.nav-link {
+    
+    color: #fff !important;
+}
+
+nav, .container-fluid{
+    color:white;
+}
+nav img {
+    width: 100px;
+}
+
+.container {
+    margin-top: 75px;
+    margin-bottom: 100px;
+}
+.container h1 {
+    margin-bottom: 75px;
+    text-align: center;
+    font-size: bold;
+    color: gray;;
+}
+
+.card-text{
+    font-size:19px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.card-link{
+    text-decoration: none;
+}
+
+/* CSS metodo pago */
+
+.payment-method{
+    display:inline-block;
+    /*margin-top: 100px;*/
+    background-color: #17A2B8;
+    color: #fff;
+    height: 200px;
+    padding-top: 50px;
+    text-align: center;
+}
+
+.payment-method h2{
+    font-size: 56px;
+}
+
+
+.fa-brands {
+    font-size: 460%;
+}
+
+/* CSS footer */
+
+footer {
+    height: 200px;
+    padding-top: 50px;
+    background-color: #E83E8C ;
+    text-align: center;
+}
+
+footer img {
+    height: 100px;
+}

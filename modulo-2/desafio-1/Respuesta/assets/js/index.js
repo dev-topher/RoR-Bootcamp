@@ -1,0 +1,1 @@
+/* JS exclusivo de Index */

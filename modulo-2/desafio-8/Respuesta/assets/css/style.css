@@ -1,0 +1,69 @@
+
+/*
+font-family: 'Cabin', sans-serif;
+font-family: 'Lobster', cursive;
+*/
+
+* {
+    font-family: 'Cabin', sans-serif;
+}
+
+.nombre-marca {
+    font-family: 'Lobster', sans-serif;
+}
+
+.title-main-card{
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.btn-outline-secondary{
+    font-size: 14px;
+}
+
+#carrusel-home{
+    padding-bottom: 50px;
+}
+
+
+.carousel-indicators [data-bs-target] {
+    box-sizing: content-box;
+    flex: 0 1 auto;
+    width: 10px; 
+    height: 10px; 
+    padding: 0;
+    margin-right: 3px;
+    margin-left: 3px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: #a9a9a9;
+    background-clip: padding-box;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    opacity: .5;
+    transition: opacity .6s ease;
+    border-radius: 100%;  
+}
+
+.carousel-indicators .active {
+    background-color: #2b2b2b; 
+}
+
+
+#newsletter{
+    background-color: #DC3545;
+    color: #fff;
+}
+
+#newsletter button{
+    border-color: #fff;
+    background-color: #DC3545;
+    color: #fff;
+}
+
+/* CSS FOOTER */
+
+footer{
+    color:#fff;
+    background-color:#2b2b2b;
+}

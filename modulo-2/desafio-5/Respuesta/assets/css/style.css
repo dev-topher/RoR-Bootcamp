@@ -1,0 +1,94 @@
+/* CSS general */
+
+*{
+    font-family: 'Raleway', sans-serif;
+}
+
+/* CSS header */
+
+header {
+    color:#fff;
+}
+
+header .contenedor-header{
+    text-align: end;
+    margin-top: 50px;
+}
+
+.bg-image {
+    height: 600px; 
+    background-image: url('../img/bg-hero.jpg'); 
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    font-size: 50px;
+    margin-left: 20%;
+}
+
+header p {
+    font-size: 15px;
+    margin-left: 40%;
+}
+
+.btn-primary{
+    border-color: #17A2B8  !important;
+    background-color:#17A2B8  !important;
+}
+
+.btn-outline-primary {
+    border-color: #17A2B8;
+    color: #fff;
+}
+
+/* CSS Acerca de */
+
+#container-acerca-de h2{
+    font-weight: bold;
+    font-size: 60px;
+}
+
+#container-acerca-de h5{
+    font-weight: bold;
+    font-size: 25px;
+}
+
+/* CSS Mis trabajos */
+
+.container-cards{
+    background-color: #17A2B8;
+}
+
+.container-cards h2{
+    font-weight: bold;
+    font-size: 60px;
+    color:#fff;
+}
+
+.container-cards h5{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.container-cards .btn-outline-primary {
+    border-color: #17A2B8;
+    color: #17A2B8;
+}
+
+/* CSS Contacto */
+
+.container-contacto h2{
+    font-weight: bold;
+    font-size: 40px;
+}
+
+/* CSS Footer */
+
+footer {
+    height: 100px;
+    padding-top: 25px;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+}

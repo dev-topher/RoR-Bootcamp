@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="view" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+</head>
+    <title>Tabla Notas</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Notas Finales</h1>
+        
+        <div class="row">
+            <div class="col-4">
+                <h4>Nombre:</h4>
+                <h4>Carrera: </h4>
+            </div>
+            <div class="col-4">
+                <p>Christopher Paredes</p>
+                <p>Ruby on Rails para Startups</p>
+            </div>
+        </div>
+
+
+        <table class="table">
+            <thead class="table-dark">
+                <tr>
+                    <th scope="col">Ramo</th>
+                    <th scope="col">Nota 1</th>
+                    <th scope="col">Nota 2</th>
+                    <th scope="col">Nota 3</th>
+                    <th scope="col">Nota Final</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td id="ramo">HTML</td>
+                    <td id="nota1html">-</td>
+                    <td id="nota2html">-</td>
+                    <td id="nota3html">-</td>
+                    <td id="notafinalhtml">-</td>
+                </tr>
+                <tr>
+                    <td id="ramo">CSS</td>
+                    <td id="nota1css">-</td>
+                    <td id="nota2css">-</td>
+                    <td id="nota3css">-</td>
+                    <td id="notafinalcss">-</td>
+                </tr>
+                <tr>
+                    <td id="ramo">JavaScript</td>
+                    <td id="nota1js">-</td>
+                    <td id="nota2js">-</td>
+                    <td id="nota3js">-</td>
+                    <td id="notafinaljs">-</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script src="assets/js/notas.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+</body>
+</html>

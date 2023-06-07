@@ -1,0 +1,56 @@
+
+/* CSS Base */
+
+*{
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    background-color: #000 !important;
+    color: #fff !important;
+}
+ 
+/* Header */
+
+.navbar {
+    background-color: #0cccf4;
+}
+
+.navbar__logo{
+    width: 25px;
+    height: 25px;
+}
+
+/* Titulo */
+
+.title__info{
+    background-color: #0cccf4;
+}
+
+/* Destacados */
+
+#destinos__cards .card{
+    width: fit-content;
+    background-color: #0cccf4;
+}
+
+#destinos__cards .card img{
+    height:200px;
+}
+
+/* Contacto */
+
+#form_comtacto .btn{
+    color: #fff;
+}
+
+/* footer */
+
+footer {
+    background-color: #0cccf4;
+    color: #fff;
+}
+
+#iconos_footer ul li{
+    display:inline-block;
+}
