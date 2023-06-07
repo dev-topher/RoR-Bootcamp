@@ -14,15 +14,15 @@ En el módulo 3 se realizó distintos trabajos orientados al uso de bases de dat
 
 ## Desafío 3
 
-- El desafío consiste en crear una página simple de HTML utilizando CSS que permita asemejar el sitio a una plantilla otorgada, generando espacios cuadriculados para tener un orden de información.
+- El desafío consiste en generar un script que conecte información entre dos tablas mediante sentencias SQL.
 	> Dentro de la carpeta **desafio-3** se encuentra más detalles en el archivo PDF.
 
 ## Desafío 4
 
-- El desafío consiste en crear una página simple de HTML utilizando CSS y BootStrap que permita asemejar el sitio a una plantilla otorgada, generando espacios cuadriculados para tener un orden de información.
+- El desafío consiste en generar un normalizamiento de tabla mediante unos requerimientos específicos otorgados por el PDF.
 	> Dentro de la carpeta **desafio-4** se encuentra más detalles en el archivo PDF.
 
 ## Prueba
 
-- La prueba consiste en crear una página simple de HTML que utilice CSS, JavaScript, jQuery y Bootstrap, que permita realizar ciertas acciones e interactuar con ciertas características de la página, modificándola o generando alertas. Además, llevar un control de versiones a través de GitHub.
+- La prueba consiste en crear y modelar bases de datos, además de utilizar distintas formas de acceder al contenido necesario de la manera más óptima.
 	> Dentro de la carpeta **prueba** se encuentra más detalles en el archivo PDF y en el archivo **Video.md** .
