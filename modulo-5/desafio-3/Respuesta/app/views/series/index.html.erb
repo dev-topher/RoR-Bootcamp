@@ -1,0 +1,21 @@
+<div class="container">
+    <div class="row">
+        <h1>Listado de series</h1>
+        <% @series.each do |serie| %>
+            <div class="col-md-6">
+                <div class="card" style="width: 18rem;">
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item">Nombre: <%= serie.name %></li>
+                      <li class="list-group-item">Sinopsis: <%= serie.synopsis %></li>
+                      <li class="list-group-item">Director: <%= serie.director %></li>
+                    </ul>
+                </div>
+            </div>
+        <% end %>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <%= link_to 'Nueva serie', series_new_path, class: 'btn btn-primary w-100' %>
+        </div>
+    </div>
+</div>

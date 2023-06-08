@@ -1,0 +1,21 @@
+<div class="container">
+    <div class="row">
+        <h1>Listado de documentales</h1>
+        <% @documentary_films.each do |documentary_film| %>
+            <div class="col-md-6">
+                <div class="card" style="width: 18rem;">
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item">Nombre: <%= documentary_film.name %></li>
+                      <li class="list-group-item">Sinopsis: <%= documentary_film.synopsis %></li>
+                      <li class="list-group-item">Director: <%= documentary_film.director %></li>
+                    </ul>
+                </div>
+            </div>
+        <% end %>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <%= link_to 'Nuevo documental', documentary_films_new_path, class: 'btn btn-primary w-100' %>
+        </div>
+    </div>
+</div>

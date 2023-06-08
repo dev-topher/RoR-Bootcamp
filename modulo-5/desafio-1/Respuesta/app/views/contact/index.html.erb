@@ -1,0 +1,87 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#"><i class="fa-solid fa-briefcase"></i> Portafolio Christopher</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <%= link_to "<i class='fa-solid fa-house-chimney'></i> Home".html_safe, home_path, class:"nav-link" %>
+          </li>
+          <li class="nav-item">
+            <%= link_to "<i class='fa-solid fa-book'></i> Proyectos".html_safe, projects_path, class:"nav-link" %>
+          </li>
+          <li class="nav-item">
+            <%= link_to "<i class='fa-solid fa-envelope'></i> Contacto".html_safe, contact_path, class:"nav-link active" %>
+          </li>
+        </ul>
+      </div>
+    </div>
+</nav>
+
+<div class="container">
+  <h2 class="text-center pt-5">Formulario de contacto</h2>
+  <div class="row py-5">
+    <form>
+      <div class="mb-3">
+        <label for="nombreUsuario" class="form-label">Nombre completo</label>
+        <input type="text" class="form-control" id="nombre_usuario" for="nombreUsuario">
+      </div>
+      <div class="mb-3">
+        <label for="emailUsuario" class="form-label">Email de contacto</label>
+        <input type="email" class="form-control" id="email_usuario" for="emailUsuario" aria-describedby="emailUsuario">
+        <div id="emailHelp" class="form-text">Email de uso interno, no será compartido por ningún motivo.</div>
+      </div>
+      <div class="mb-3">
+        <select class="form-select" aria-label="select_form">
+          <option selected>Principal necesidad</option>
+          <option value="1">Desarrollo Full Stack</option>
+          <option value="2">Análisis de datos</option>
+          <option value="3">Administración de base de datos</option>
+        </select>
+      </div>
+      <div class="mb-3">
+        <label for="telefonoContacto" class="form-label">Número telefónico de contacto</label>
+        <input type="number" class="form-control" id="telefono_contacto" for="telefonoContacto">
+      </div>
+
+      <div class="mb-3 form-floating">
+        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+        <label for="floatingTextarea2">Comentarios adicionales al problema</label>
+      </div>
+      <div class="mb-3 form-check">
+        <div class="row">
+
+          <div class="col-2">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Suscribirse a newsletter</label>
+          </div>
+          <div class="col-2">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Suscribirse a bot de Github</label>
+          </div>
+          <div class="col-2">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Suscribirse a 1</label>
+          </div>
+          <div class="col-2">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Suscribirse a 2</label>
+          </div>
+          <div class="col-2">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Suscribirse a 3</label>
+          </div>
+          <div class="col-2">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Suscribirse a 4</label>
+          </div>
+        </div>
+
+      </div>
+      <button type="submit" class="btn btn-primary w-100">Submit</button>
+    </form>
+  </div>
+
+</div>

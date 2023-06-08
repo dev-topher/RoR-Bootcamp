@@ -1,0 +1,24 @@
+<header id="header">
+    <h2>Información sobre la página</h2>
+    <p>Puedes encontrar más templates en: <a href="http://html5up.net">HTML5 UP</a></p>
+    <%= link_to 'Volver al inicio', root_path %>
+    <br>
+    <ul class="icons">
+      <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+      <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+      <li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
+      <li><a href="#" class="icon fa-envelope"><span class="label">Email</span></a></li>
+    </ul>
+</header>
+<section id="thumbnails">
+    <article>
+        <%= link_to image_tag('thumbs/01.jpg'), image_path('fulls/01.jpg'), class: 'thumbnail', data: { position: 'left center' } %>
+        <h2>Diam tempus accumsan</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </article>
+    <article>
+        <%= link_to image_tag('thumbs/02.jpg'), image_path('fulls/02.jpg'), class: 'thumbnail' %>
+        <h2>Vivamus convallis libero</h2>
+        <p>Sed velit lacus, laoreet at venenatis convallis in lorem tincidunt.</p>
+    </article>
+</section>

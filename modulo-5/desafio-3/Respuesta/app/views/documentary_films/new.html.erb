@@ -1,0 +1,24 @@
+<div class="container">
+  <div class="row">
+    <h1 class="text-center">Agregar documental</h1>
+    <div class="col">
+      <%= form_with model: @documentary_film, url: documentary_films_create_path do |form| %>
+        <p>
+          <%= form.label :name %><br>
+          <%= form.text_field :name %>
+        </p>
+        <p>
+          <%= form.label :synopsis %><br>
+          <%= form.text_area :synopsis %>
+        </p>
+        <p>
+          <%= form.label :director %><br>
+          <%= form.text_field :director %>
+        </p>
+        <p>
+          <%= form.submit 'Guardar' %>
+        </p>
+      <% end %>
+    </div>
+  </div>
+</div>

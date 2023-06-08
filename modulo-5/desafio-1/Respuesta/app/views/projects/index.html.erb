@@ -1,0 +1,89 @@
+<% content_for :head do %>
+  <meta name="author" content="@TopherLid on Github">
+<% end %>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <%= link_to "<i class='fa-solid fa-briefcase'></i> Portafolio Christopher".html_safe, home_path, class:"navbar-brand" %>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <%= link_to "<i class='fa-solid fa-house-chimney'></i> Home".html_safe, home_path, class:"nav-link" %>
+        </li>
+        <li class="nav-item">
+          <%= link_to "<i class='fa-solid fa-book'></i> Proyectos".html_safe, projects_path, class:"nav-link active" %>
+        </li>
+        <li class="nav-item">
+          <%= link_to "<i class='fa-solid fa-envelope'></i> Contacto".html_safe, contact_path, class:"nav-link" %>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  
+<!-- contenido página -->
+
+<div class="container">
+  <h2 class="text-center py-5">Proyectos trabajados</h2>
+</div>
+
+<div class="container-fluid py-5">
+    <div class="row py-2">
+        <div class="col">
+            <div class="card border-0">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <%= image_tag 'img4.png', class:'img-fluid rounded-start' %>
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">1.- Polimorfismo en Ruby</h5>
+                      <p class="card-text">Trabajo realizado para el bootcamp "Ruby on Rails para Startups", el cual consiste en el uso de clases de Ruby para reducir 
+                        redundancia dentro del código, y que ésta sea capaz de repetirse las veces necesarias al momento de llamar los métodos de la clase.</p>
+                      <a target="_blank" href="https://github.com/TopherLid/Prueba-M4-Ruby" class="btn btn-primary">Ver más</a>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row py-2">
+        <div class="col">
+            <div class="card border-0">
+                <div class="row g-0">
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">2.- Landing Page PHP</h5>
+                      <p class="card-text">Landing page informativa realizada para la empresa "Capital Mining SpA.". Desarrollada en PHP</p>
+                      <a target="_blank" href="https://github.com/TopherLid/php-capitalmining-public" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <%= image_tag 'img1.png', class:'img-fluid rounded-start' %>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row py-2">
+        <div class="col">
+            <div class="card border-0">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <%= image_tag 'IMG2.png', class:'img-fluid rounded-start' %>
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Landing Page Estática</h5>
+                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                      <a target="_blank" href="https://github.com/TopherLid/prueba_viajes_chile" class="btn btn-primary">Ver más </a>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,18 @@
+
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <h1 class="text-center">New tweet</h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12">
+      <%= render "form", tweet: @tweet %>
+    </div>
+  </div>
+  <div class="row py-3">
+    <div class="col-12">
+      <%= link_to "Back to tweets", tweets_path, class: "btn btn-primary" %>
+    </div>
+  </div>
+</div>
