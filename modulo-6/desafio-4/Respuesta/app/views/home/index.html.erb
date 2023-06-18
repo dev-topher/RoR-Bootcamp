@@ -1,0 +1,56 @@
+<div class="row py-5">
+    <h1 class="text-center">KariPics</h1>
+    <p class="text-center">Blog para compartir mis fotografías profesionales.</p>
+</div>
+
+<div class="row py-5">
+
+    <% @posts.each do |post| %>
+
+    <div class="col-6">
+
+        <div class="card">
+            <%= image_tag post.image.url, class: "card-img-top" %>
+            <div class="card-body">
+              <h5 class="card-title text-center"><%= post.title %></h5>
+              <p class="card-text"><%= post.description %></p>
+            </div>
+            
+            <ul class="list-group list-group-flush">
+                <% post.comments.each do |comment| %>
+                <li class="list-group-item">
+                    <% if comment.user.avatar.present? %>
+                        <%= image_tag comment.user.avatar.url, class: "avatar-image", style: "width: 45px; height: 45px;" %> <%= comment.user.name %>: <%= comment.content %>
+                    <% else %>
+                        <%= comment.user.name %>: <%= comment.content %>
+                    <% end %>
+                </li>
+                <% end %>
+            </ul>
+
+            <% if user_signed_in? %>
+                <div class="card-body">
+                    <%= link_to 'Comenta', "/comments/new?post=#{post.id}", class: 'btn btn-primary w-100' %>
+                </div>
+            <% else %>
+                <div class="card-body">
+                    <%= link_to 'Iniciar sesión', new_user_session_path, class: 'btn btn-primary w-100' %>
+                </div>
+            <% end %>
+
+        </div>
+    </div>
+
+    <% end %>
+
+</div>
+
+<% if current_user.present? && current_user.admin? %>
+
+<div class="row py-5">
+    <div class="col-12">
+        <%= link_to "Nueva publicación", new_post_path, class: "btn btn-success w-100" %>
+    </div>
+</div>
+
+<% end %>

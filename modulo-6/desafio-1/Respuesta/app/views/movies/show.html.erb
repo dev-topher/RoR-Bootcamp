@@ -1,0 +1,17 @@
+<div class="container">
+  <div class="row">
+    <p style="color: green"><%= notice %></p>    
+    <%= render @movie %>
+  </div>
+  <div class="row">
+    <div class="col-4">
+      <%= link_to "Vuelve a películas", movies_path, class: "btn btn-primary w-100" %>
+    </div>
+    <div class="col-4">
+      <%= link_to "Edita esta película", edit_movie_path(@movie), class: "btn btn-warning w-100" %>
+    </div>
+    <div class="col-4">
+      <%= button_to "Elimina esta película", @movie, method: :delete, class: "btn btn-danger w-100" %>
+    </div>
+  </div>
+</div>

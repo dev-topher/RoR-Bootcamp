@@ -1,0 +1,16 @@
+<p style="color: green"><%= notice %></p>
+<div class="container">
+  <h1 class="text-center py-3">Movies</h1>
+  <div id="movies">
+    <div class="row">
+      <% @movies.each do |movie| %>
+      <%= render movie %>
+      <% end %>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <%= link_to "Nueva película", new_movie_path, class: "btn btn-success w-100" %>
+      </div>
+    </div>
+  </div>
+</div>

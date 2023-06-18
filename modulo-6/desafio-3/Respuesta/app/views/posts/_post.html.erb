@@ -1,0 +1,37 @@
+<div id="<%= dom_id post %>">
+
+  <h2 class="text-center"><%= post.title %></h2>
+  <p><%= post.content %></p>
+  <p><strong>Autor: </strong><%= post.user.email %></p>
+
+  <div class="row py-3">
+    <span class="text-center">Han reaccionado <%= post.reactions.count %> personas</span>
+  </div>
+
+  <div class="row py-3">
+    <div class="col-6">
+        <%= link_to 'Comenta', "/comments/new?post=#{post.id}", class: 'btn btn-primary w-100' %>
+    </div>
+
+    <div class="col-6">
+      <% if user_signed_in? %>
+        <% reaction = current_user.reactions.find_by(post: post) %>
+        <% if reaction.nil? %>
+          <%= button_to "Me gusta", reactions_path, params: { reaction: { post_id: post.id } }, method: :post, class: "btn btn-secondary w-100" %>
+        <% else %>
+          <%= button_to "No me gusta", reaction_path(reaction), method: :delete, class: "btn btn-secondary w-100" %>
+        <% end %>
+      <% end %>
+    </div>
+  </div>
+
+  <div class="row py-3">
+    <% post.comments.each do |comment| %>
+      <% if comment.user_id == 0 %>
+        <p>Anónimo comenta: <%= comment.content %></p>
+      <% else %>
+        <p><%= comment.user.email %> comenta: <%= comment.content %></p>
+      <% end %>
+    <% end %>
+  </div>
+</div>

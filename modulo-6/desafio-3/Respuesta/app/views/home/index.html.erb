@@ -1,0 +1,32 @@
+<div class="row py-5">
+    <div class="col-12">
+        <h1 class="text-center"><%= image_tag("navbar/logo", alt: "Logo", style: "width: 50px; height: 50px;" ) %> Crazy 4 Cats</h1>
+        <p class="text-center">Blog para apreciar a nuestros lindos gatitos ! =3</p>
+    </div>
+</div>
+<div class="row"> <!-- añadyr gy-3 para bordes del eje y -->
+    <div class="d-none d-md-block col-2">
+        <h4>Posts favoritos</h4>
+        <p>Próximamente...</p>
+    </div>
+        <div class="col-12 col-md-8">
+            <% @posts.each do |post| %>
+                <div class="card">
+                    <div class="card-body">
+                        <%= render post %>
+                    </div>
+                </div>
+            <% end %>
+        </div>
+    <div class="d-none d-md-block col-2">
+        <h4>Mensajes</h4>
+        <p>Próximamente...</p>
+    </div>
+</div>
+<% if user_signed_in? %>
+<div class="row py-5">
+    <div class="col-12">
+        <%= link_to "Nueva publicación", new_post_path, class: "btn btn-success w-100" %>
+    </div>
+</div>
+<% end %>

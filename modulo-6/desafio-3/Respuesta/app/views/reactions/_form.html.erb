@@ -1,0 +1,47 @@
+
+<%= form_with(model: reaction) do |form| %>
+<div class="row">
+  <% if reaction.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(reaction.errors.count, "error") %> prohibited this reaction from being saved:</h2>
+      <ul>
+        <% reaction.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>  
+</div>
+
+<div class="row py-5">    
+  <div class="col-4">
+    <div class="form-check">
+      <%= form.radio_button :reaction_type, :me_gusta, class: "form-check-input", checked: true %>
+      <label class="form-check-label" for="model_reaction_type_opcion1">Me gusta</label>
+    </div>
+  </div>
+  <div class="col-4">
+    <div class="form-check">
+      <%= form.radio_button :reaction_type, :sin_reaccion, class: "form-check-input" %>
+      <label class="form-check-label" for="model_reaction_type_opcion1">Sin reacción</label>
+    </div>
+  </div>
+  <div class="col-4">
+    <div class="form-check">
+      <%= form.radio_button :reaction_type, :no_me_gusta, class: "form-check-input" %>
+      <label class="form-check-label" for="model_reaction_type_opcion1">No me gusta</label>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="row">
+  <div class="mb-3">
+    <%= form.hidden_field :post_id, value: @post %>
+  </div>
+  <div class="mb-3">
+    <%= form.submit "Agrega la reacción", class: "btn btn-success w-100" %>
+  </div>
+</div>
+<% end %>

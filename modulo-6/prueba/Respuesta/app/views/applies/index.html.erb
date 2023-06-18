@@ -1,0 +1,27 @@
+<div class="row py-5">
+    <h2 class="text-center">Aplicaciones</h2>
+</div>
+
+<% if @applies.empty? %>
+    <div class="row py-5">
+        <div class="col-12">
+            <div class="alert alert-warning" role="alert">
+                No tienes postulaciones a ninguna oferta laboral
+            </div>
+        </div>
+    </div>
+<% else %>
+    <div class="row py-5">
+        <% @applies.each do |apply| %>
+            <div class="col-12">
+                <h4 class="text-center">Aplicación #<%= apply.id %></h4>
+                <p>Trabajo: <%= apply.job.title %></p>
+                <p>Estado: <%= apply.status %></p>
+            </div>
+        <% end %>
+    </div>
+<% end %>
+
+<div class="row py-5">
+    <%= link_to "Vuelve", root_path %>
+</div>

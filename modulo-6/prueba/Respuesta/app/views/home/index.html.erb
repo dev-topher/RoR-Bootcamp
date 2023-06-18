@@ -1,0 +1,57 @@
+<div class="row py-5">
+    <h1 class="text-center"><i class="fa-regular fa-briefcase-blank"></i> Mi Futuro Trabajo</h1>
+    <p class="text-center">Sitio web para postulaciones laborales.</p>
+</div>
+
+<% if current_user.present? && current_user.admin? %>
+
+<div class="row">
+    <div class="col-12">
+        <div class="alert alert-warning alert-dismissible fade show" role="alert">
+            <i class="fa-solid fa-triangle-exclamation"></i> <strong>¡Cuidado!</strong> tienes <strong><%= @apply_count %></strong> <%= "#{ @apply_count == 1 ? 'postulación pendiente' : 'postulaciones pendientes' }" %> para tu evaluación.
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    </div>
+</div>
+
+<% end %>
+
+<div class="row">
+    
+    <% @jobs.each do |job| %>
+    <div class="col-6">
+        <div class="card">
+            <%= image_tag job.image.url, class: "card-img-top" %>
+            <img src="" class="card-img-top">
+            <div class="card-body">
+            <h5 class="card-title text-center"><%= job.title %></h5>
+
+            <% if current_user.present? %>
+                <% if current_user.admin? %>
+                    <%= link_to 'Revisa todas las postulaciones', "/jobs/#{job.id}", class: 'btn btn-primary w-100' %>
+                <% else %>
+                    <%= link_to 'Postula ahora', "/applies/new?job=#{job.id}" , class: 'btn btn-primary w-100' %>
+                <% end %>
+            <% else %>
+
+            <%= link_to 'Inicia sesión para más información', new_user_session_path, class: 'btn btn-primary w-100' %>
+
+            <% end %>
+
+            </div>
+        </div>
+    </div>
+    <% end %>
+
+</div>
+
+
+<% if current_user.present? && current_user.admin? %>
+
+<div class="row py-5">
+    <div class="col-12">
+        <%= link_to "Nueva publicación de trabajo", new_job_path, class: "btn btn-success w-100" %>
+    </div>
+</div>
+
+<% end %>

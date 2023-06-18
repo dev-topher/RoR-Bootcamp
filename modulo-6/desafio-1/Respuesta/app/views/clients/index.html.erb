@@ -1,0 +1,28 @@
+<p style="color: green"><%= notice %></p>
+
+<div class="container">
+  <h1 class="text-center py-3">Clients</h1>
+  <div id="clients">
+    <table class="table table-bordered table-striped">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Nombre</th>
+          <th scope="col">Edad</th>
+          <th scope="col">Película</th>
+          <th scope="col" colspan="3"></th>
+        </tr>
+      </thead>
+      <tbody>
+        <% @clients.each do |client| %>
+          <%= render client %>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
+  <div class="row">
+    <div class="col-12">
+      <%= link_to "Nuevo cliente", new_client_path, class: "btn btn-primary w-100" %>
+    </div>
+  </div>
+</div>

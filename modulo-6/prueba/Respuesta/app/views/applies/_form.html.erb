@@ -1,0 +1,27 @@
+<%= form_with(model: apply) do |form| %>
+  <% if apply.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(apply.errors.count, "error") %> prohibited this application from being saved:</h2>
+
+      <ul>
+        <% apply.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="mb-3">
+    <%= form.label :application, "¿Porqué deberíamos contratarte?", class: ["form-label"] %>
+    <%= form.text_field :application, class: 'form-control' %>
+  </div>
+
+  <div class="mb-3">
+    <%= form.hidden_field :job_id, value: @job.id %>
+  </div>
+
+  <div class="mb-3">
+    <%= form.submit "Aplica a este trabajo", class: "btn btn-success w-100" %>
+
+  </div>
+<% end %>
