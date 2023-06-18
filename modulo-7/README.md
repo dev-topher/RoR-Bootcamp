@@ -1,14 +1,13 @@
-# Módulo 1
+# Módulo 7
 
-En el módulo 1 se realizó un trabajo introductorio para lo que es la industra TI, el cual contaba con dos desafíos evaluados cuyas respuestas se encuentran en las carpetas adjuntas.
-Las respuestas se encuentran en el formato `.docx y .pptx`.
+En el módulo 7 se concentró principalmente en generar ideas y cómo realizar mock-ups de sitios web. Estuvo más enfocado a orientación de ideas y cómo pulirlas o modificarlas.
 
 ## Desafío 1
 
-- El desafío consiste en ayudar a los compañeros de equipo que tienen dificultades para comprender algunos conceptos relacionados con la industria de Tecnología de la Información (TI). Estos conceptos están afectando sus calificaciones en proyectos individuales y su comprensión de cómo los módulos del bootcamp los ayudarán a desarrollar las habilidades necesarias. 
+- Este desafío buscaba generar conocimientos sobre el público general y público objetivo dentro de un rubro. Orientar el servicio para que sea lo más ad-hoc al cliente posible.
 	> Dentro de la carpeta **desafio-1** se encuentra más detalles en el archivo PDF.
 
-## Desafío 2
+## Prueba
 
-- En este desafío, se presenta el caso de Rocío, quien ha decidido ingresar a un Bootcamp de programación para adquirir nuevas habilidades y aprender a programar. El desafío consta en orientar a una persona que tenga dificultades por motivos variados, tanto en organización como conocimientos.
-	> Dentro de la carpeta **desafio-2** se encuentra más detalles en el archivo PDF.
+- En esta prueba se busca generar mock-ups orientados y fidelizados para el desarrollo inicial de un sistema.
+	> Dentro de la carpeta **prueba** se encuentra más detalles en el archivo PDF.
